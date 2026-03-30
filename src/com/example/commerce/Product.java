@@ -1,8 +1,5 @@
 package com.example.commerce;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
        private String name;
        private int price;
