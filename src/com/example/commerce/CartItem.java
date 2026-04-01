@@ -29,8 +29,6 @@ public class CartItem {
         return product.getPrice();
     }
 
-
-
     public void increase(){
         quantity = quantity + 1;
     }

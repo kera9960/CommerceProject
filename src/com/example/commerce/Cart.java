@@ -22,24 +22,12 @@ public class Cart {
         return cart.isEmpty();
     }
 
-    public int getItemCount(){
-        return cart.size();
-    }
-
     public int getTotalAmount(){
         int totalAmount = 0;
         for (CartItem e : cart){
             totalAmount = totalAmount + e.getTotalPrice();
         }
         return totalAmount;
-    }
-    public void increaseQuantity(Product product){
-        for(CartItem e : cart){
-            if (e.getProduct().equals(product)){
-                e.increase();
-                break;
-            }
-        }
     }
 
     public void addProduct(Product product) {
