@@ -27,6 +27,10 @@ public class Product {
        }
 
        public void decreaseStock(){
+              if (stock >= 1){
               this.stock = this.stock - 1;
+              } else {
+                     throw new IllegalStateException("재고 부족");
+              }
        }
 }
