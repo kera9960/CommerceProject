@@ -3,7 +3,6 @@ package com.example.commerce;
 import java.util.Scanner;
 
 public class InputParser {
-
     public int toInteger(String input){
         try {
             return Integer.parseInt(input);
@@ -22,7 +21,6 @@ public class InputParser {
             }
         }
     }
-
     public int minMax(Scanner sc, int min, int max){
         while (true){
             int input = inputInt(sc);

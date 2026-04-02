@@ -6,14 +6,12 @@ public class ProcessOrder {
     public ProcessOrder(Cart cart){
         this.cart = cart;
     }
-
     public void viewInCart(){
         for (CartItem  e : cart.getCartList()){
             System.out.printf("%-15s | %,d원 | %d개%n",e.getProductName(), e.getProductPrice(), e.getQuantity());
         }
         System.out.printf("총 금액: %,d원%n", cart.getTotalAmount());
     }
-
     public void confirmPurchase(){
         boolean isEnoughStock = true;
         for (CartItem e : cart.getCartList()) {
